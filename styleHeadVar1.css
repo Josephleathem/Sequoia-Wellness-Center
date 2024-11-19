@@ -33,6 +33,10 @@ body {
     background-color: #ADC4CC;
 }
 
+header {
+    color: #134D62; /*This look better in black, this my be too much blue*/
+}
+
 header h1 {
     text-align: center;
     font-weight:800
@@ -98,4 +102,9 @@ h3 {
     text-align: center;
     margin-top: -10px;
     margin-bottom: 10px;
+}
+
+.Insurances li{
+    display: flex;
+    line-height: 125%;
 }
