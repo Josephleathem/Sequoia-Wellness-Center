@@ -55,8 +55,9 @@ header h4 {
 }
 
 img#logo {
-    width: 85%;  /*or 100%s*/
-    height: auto;
+        width: 175px;
+        height: 150px;
+        margin-bottom: -25px;
 }
 
 .headerBottom {
@@ -109,7 +110,7 @@ h3 {
     line-height: 125%;
 }
 
-.pensionStatement {
+.missonStatement {
     text-align: center;
 }
 
