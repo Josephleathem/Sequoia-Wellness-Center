@@ -108,10 +108,18 @@ h3 {
 .provider {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-    border-radius: 10%;
-    width: 20%;
-    height: 250px;
+    border: 1px solid #134D62;
+    width: 33%;
+    height: auto;
     margin: 10px;
     padding: 7.5px;
+}
+
+h5 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.provider p {
+    margin: 5px 0px;
 }
