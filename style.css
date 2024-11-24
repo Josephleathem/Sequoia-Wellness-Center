@@ -103,6 +103,7 @@ h3 {
 
 .providers {
     justify-content: center;
+    align-items: baseline;
 }
 
 .provider {
