@@ -97,6 +97,16 @@ h3 {
     line-height: 125%;
 }
 
+.Contacts li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Contacts ul li a {
+    padding: 0px;
+}
+
 .missonStatement {
     text-align: center;
 }
