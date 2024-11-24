@@ -92,7 +92,7 @@ h3 {
     margin-bottom: 10px;
 }
 
-.Insurances li{
+.Insurances li, .Contacts li{
     display: flex;
     line-height: 125%;
 }
