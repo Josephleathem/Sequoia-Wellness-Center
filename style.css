@@ -105,7 +105,9 @@ h3 {
 }
 
 .Contacts ul li a {
-    padding: 0px;
+    padding: 0px 0px 0px 5px;
+    text-decoration: underline;
+    text-transform: capitalize;
 }
 
 .missonStatement {
