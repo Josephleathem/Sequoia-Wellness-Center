@@ -139,3 +139,11 @@ h5 {
 .STS {
     text-align: center;
 }
+
+table, tr, th, td  {
+    background-color: #608997;
+    border: 1px solid #134D62;
+    border-collapse: separate;
+    text-align: center;
+    margin: auto;
+}
