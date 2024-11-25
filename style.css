@@ -3,7 +3,19 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%;
+}
+
 body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
     background-color: #ADC4CC;
     line-height: 125%;
 }
@@ -72,6 +84,10 @@ body {
 
 hr {
     margin: 0px;
+}
+
+.main-section {
+    flex: 1; /* Allows this section to grow and fill space */
 }
 
 /* Header Section */
@@ -197,4 +213,6 @@ h5 {
 /* Footer Section */
 footer {
     text-align: center;
+    background-color: #86a7b2;
+    padding: 10px;
 }
