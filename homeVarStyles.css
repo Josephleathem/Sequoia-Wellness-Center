@@ -168,6 +168,11 @@ table, tr, th, td {
     line-height: 125%;
 }
 
+p.map {
+    display: flex;
+    justify-content: center;
+}
+
 p.addr {
     margin: 0px;
     text-align: center;
