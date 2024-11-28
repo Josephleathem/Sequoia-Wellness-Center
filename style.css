@@ -221,6 +221,10 @@ h5 {
     margin-top: 20px;
 }
 
+.jobtitle {
+    display: none;
+}
+
 .provider p {
     margin: 5px 0px;
 }
