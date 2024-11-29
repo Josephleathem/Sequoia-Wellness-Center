@@ -99,8 +99,8 @@ hr {
 }
 
 img#logo {
-    width: 175px;
-    height: 150px;
+    width: 205px;
+    height: 175px;
     margin-bottom: -25px;
     margin-top: -25px;
 }
@@ -145,6 +145,7 @@ ul.navBar li a:hover { /*Added for effect of links. May not keep.*/
 /* Home Page Specific */
 .missonStatement {
     text-align: center;
+    font-size: large;
 }
 
 h4 {
@@ -177,6 +178,7 @@ p.addr {
     display: flex;
     flex-direction: row;
     align-items: center;
+    line-height: 150%;
 }
 
 .Contacts ul li a {
