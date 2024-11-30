@@ -46,6 +46,15 @@
                 <h2>Hours and Insurances Accepted</h2>
                 <div class="row">
                     <div class="col-6">
+                        <!--
+                        Dynamic Hours Display:
+                        Use JavaScript to highlight the current day in the "Hours of Operation" table:
+                        javascript
+
+                        const today = new Date().getDay(); // 0 (Sunday) to 6 (Saturday)
+                        const rows = document.querySelectorAll('table tr');
+                        if (today > 0 && today < 6) rows[today + 1].style.backgroundColor = '#e0f7fa';
+                        -->
                         <table>
                             <tbody>
                                 <tr>
@@ -109,6 +118,7 @@
             </div>
             <div class="col-6">
                 <h4 class="TreatServices">Services Provided</h4>
+                <!--Add abbr for abbreviations-->
                 <ul>
                     <li>Comprehensive Diagnostic Assessments</li>
                     <li>Substance Abuse Assessment</li>
@@ -121,6 +131,7 @@
                     <li>Individualized Treatment Approach's for Veterans and First Responders</li>
                 </ul>
                 <ul>
+                    <!--add the href tel attribute-->
                     <p>We offer a very flexible sliding scale to those who are under insured or have no insurance coverage. Please call the office if you would like more information about the service.</p>
                 </ul>
             </div>
