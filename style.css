@@ -169,6 +169,12 @@ table, tr, th, td {
     line-height: 125%;
 }
 
+iframe {
+    width: 300px;
+    height: 150px;
+    border: 0px;
+}
+
 p.map {
     text-align: center;
 }
