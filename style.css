@@ -169,6 +169,10 @@ table, tr, th, td {
     line-height: 125%;
 }
 
+p.map {
+    text-align: center;
+}
+
 p.addr {
     margin: 0px;
     text-align: center;
