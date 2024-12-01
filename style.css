@@ -81,7 +81,7 @@ body {
 .col-12 {
     width: 100%;
 }
-
+/* !! EVERY THING ABOVE THIS WAS ADDED TO THE NEW FILE ALREADY !! */
 hr {
     margin: 0px;
 }
@@ -252,85 +252,3 @@ footer a {
     color: black;
 }
 
-/* Media Queries */
-
-/* Extra Small Devices (Portrait Phones) */
-@media (max-width: 576px) {
-    img#logo {
-        width: 150px;
-        height: auto;
-        margin-bottom: -15px;
-        margin-top: -15px;
-    }
-    nav ul li {
-        display: block;
-        padding: 10px 0;
-        text-align: left;
-    }
-    .provider {
-        width: 100%;
-        margin: 5px 0;
-    }
-    table, tr, th, td {
-        font-size: 0.85em;
-        width: 100%;
-    }
-    .row {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    footer {
-        font-size: 0.9em;
-    }
-}
-
-/* Small Devices (Landscape Phones, Tablets) */
-@media (min-width: 577px) and (max-width: 768px) {
-    ul li {
-        padding: 5px;
-    }
-    .provider {
-        width: 48%;
-        margin: 1%;
-    }
-    .Insurances li, .Contacts li {
-        flex-direction: column;
-        text-align: left;
-    }
-    iframe {
-        width: 260px;
-        height: 120px;
-    }
-}
-
-/* Medium Devices (Tablets, Small Desktops) */
-@media (min-width: 769px) and (max-width: 992px) {
-    .row {
-        flex-wrap: wrap;
-    }
-    img#logo {
-        width: 175px;
-        height: auto;
-    }
-    .provider {
-        width: 32%;
-        margin: 1%;
-    }
-    table, tr, th, td {
-        font-size: 1em;
-    }
-}
-
-/* Large Devices (Wide Tablets, Desktops) */
-@media (min-width: 993px) and (max-width: 1200px) {
-    .row {
-        flex-wrap: wrap;
-    }
-    .provider {
-        width: 30%;
-        margin: 1%;
-    }
-    ul li {
-        padding: 10px;
-    }
-}
