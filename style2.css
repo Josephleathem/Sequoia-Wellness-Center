@@ -100,8 +100,11 @@ ul.navigationBar li a:hover {
 /* Home Page Specific */
 .missionStatement {
     text-align: center;
-    font-size: large;
     padding: 0px 3px;
+}
+
+h2, h3 {
+    text-align: center;
 }
 
 @media only screen  /* For Tablets */
