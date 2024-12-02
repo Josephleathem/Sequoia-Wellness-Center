@@ -13,6 +13,10 @@ html, body {
     width: 100%;
 }
 
+section {
+    flex: 1; /* Allows this section to grow and fill space */
+}
+
 .row {
     align-items: flex-start;
     display: flex;
@@ -96,6 +100,18 @@ ul.navigationBar li a:hover {
     display: none;
     font-size: 1.5em;
 }
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #86a7b2;
+    padding: 10px;
+}
+
+footer a {
+    color: black;
+}
+
 
 /* Home Page Specific */
 .missionStatement {
