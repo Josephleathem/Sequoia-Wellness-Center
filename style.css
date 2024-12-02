@@ -138,6 +138,11 @@ ul.navBar li a:hover { /*Added for effect of links. May not keep.*/
     text-shadow: 1px 1px 2.5px whitesmoke;
 }
 
+.missonStatement {
+    text-align: center;
+    font-size: large;
+}
+
 /* !! EVERY THING ABOVE THIS WAS ADDED TO THE NEW FILE ALREADY !! BELOW HAS NOT */
 
 
@@ -148,10 +153,6 @@ ul.navBar li a:hover { /*Added for effect of links. May not keep.*/
 }
 
 /* Home Page Specific */
-.missonStatement {
-    text-align: center;
-    font-size: large;
-}
 
 h4 {
     text-align: center;
