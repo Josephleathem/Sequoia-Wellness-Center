@@ -14,7 +14,7 @@ html, body {
 }
 
 .row {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
     padding: 1px;
@@ -159,5 +159,13 @@ h2, h3{
 
         .menu-toggle {
             display: block;
+        }
+
+        .contactUS {
+            display: none;
+        }
+
+        ul.contacts {
+            padding-left: 10px;
         }
 }
