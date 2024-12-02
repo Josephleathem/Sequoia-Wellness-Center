@@ -40,3 +40,65 @@ html, body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+hr {
+    margin: 0px;
+}
+
+/* Header Section */
+
+.headerLogo {
+    display: flex;
+    justify-content: center;
+}
+
+img#logo {
+    height: 175px;
+    margin: -20px auto;
+    width: 205px;
+}
+
+nav {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+ul li {
+    display: inline-table;
+    list-style: none;
+}
+
+ul li a {
+    color: black;
+    display: block;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.navigationBar li a:hover {
+    background-color: #9AB6BF;
+    border-radius: 25px;
+    text-shadow: 1px 1px 2.5px whitesmoke;
+}
+
+@media only screen  /* For Tablets */
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px) {
+        
+
+}
+
+@media only screen /* For Cellphones */
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+
+
+}

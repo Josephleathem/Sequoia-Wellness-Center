@@ -81,13 +81,9 @@ body {
 .col-12 {
     width: 100%;
 }
-/* !! EVERY THING ABOVE THIS WAS ADDED TO THE NEW FILE ALREADY !! */
+
 hr {
     margin: 0px;
-}
-
-.main-section {
-    flex: 1; /* Allows this section to grow and fill space */
 }
 
 /* Header Section */
@@ -140,6 +136,15 @@ ul.navBar li a:hover { /*Added for effect of links. May not keep.*/
     background-color: #9AB6BF;
     border-radius: 25px;
     text-shadow: 1px 1px 2.5px whitesmoke;
+}
+
+/* !! EVERY THING ABOVE THIS WAS ADDED TO THE NEW FILE ALREADY !! BELOW HAS NOT */
+
+
+/* Shared Elements */
+
+.main-section {
+    flex: 1; /* Allows this section to grow and fill space */
 }
 
 /* Home Page Specific */
