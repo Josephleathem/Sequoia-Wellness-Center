@@ -88,6 +88,14 @@ ul.navigationBar li a:hover {
     border-radius: 25px;
     text-shadow: 1px 1px 2.5px whitesmoke;
 }
+.menu-toggle {
+    background-color: #ADC4CC;
+    border: none;
+    color: black;
+    cursor: pointer;
+    display: none;
+    font-size: 1.5em;
+}
 
 @media only screen  /* For Tablets */
     and (min-device-width : 768px)
@@ -100,5 +108,25 @@ ul.navigationBar li a:hover {
     and (min-device-width : 320px)
     and (max-device-width : 480px) {
 
+        nav {
+            position: relative;
+        }        
 
+        .navigationBar {
+            background-color: #ADC4CC;
+            display: none;
+            flex-direction: column;
+            left: 0;
+            position: absolute;
+            top: 60px; /*Adjust by header size*/
+            width: 100%;
+        }
+
+        .navigationBar.visible {
+            display: flex;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
 }
