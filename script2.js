@@ -1,3 +1,5 @@
+// Shared Scripts
+
 // Navigation bar 
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
@@ -18,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Home page Specific 
-
 // Tablets
+
+// Home Page Section Two
 document.addEventListener('DOMContentLoaded', () => {
     // Set the specific media query
     const mediaQuery = window.matchMedia('(min-device-width: 768px) and (max-device-width: 1024px)');
@@ -59,7 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
     handleMediaChange(mediaQuery);
 });
 
+// Info Page Section One
+
+
 // Phones 
+
+// Home Page Section Two
 document.addEventListener('DOMContentLoaded', () => {
     // Set the specific media query
     const mediaQuery = window.matchMedia('(min-device-width: 320px) and (max-device-width: 480px)');
