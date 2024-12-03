@@ -75,7 +75,6 @@ nav ul {
 
 ul li {
     display: inline-table;
-    list-style: none;
 }
 
 ul li a {
@@ -101,6 +100,10 @@ ul.navigationBar li a:hover {
     font-size: 1.5em;
 }
 
+h2, h3{
+    text-align: center;
+}
+
 /* Footer Section */
 footer {
     text-align: center;
@@ -116,10 +119,6 @@ footer a {
 /* Home Page Specific */
 .missionStatement {
     padding: 0px 3px;
-    text-align: center;
-}
-
-h2, h3{
     text-align: center;
 }
 
@@ -144,6 +143,23 @@ h2, h3{
     margin-top: 0px;
 }
 
+/* Info Page Specific */
+
+table, tr, th, td {
+    background-color: #86a7b2;
+    border: 1px solid #134D62;
+    border-collapse: separate;
+    margin: auto;
+    text-align: center;
+}
+
+.Insurances li  {
+    display: list-item;
+    list-style-type: circle;
+}
+
+
+
 @media only screen  /* For Tablets */
     and (min-device-width : 768px)
     and (max-device-width : 1024px) {
@@ -155,6 +171,7 @@ h2, h3{
     and (min-device-width : 320px)
     and (max-device-width : 480px) {
 
+        /* Shared Elements */
         nav {
             position: relative;
         }        
@@ -177,6 +194,7 @@ h2, h3{
             display: block;
         }
 
+        /* Home page specific */
         .contactUS {
             display: none;
         }
@@ -184,4 +202,7 @@ h2, h3{
         ul.contacts {
             padding-left: 10px;
         }
+
+        /* Info page specific */
+
 }

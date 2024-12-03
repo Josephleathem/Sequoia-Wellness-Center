@@ -186,19 +186,6 @@ footer a {
     flex: 1; /* Allows this section to grow and fill space */
 }
 
-/* !! EVERY THING ABOVE THIS WAS ADDED TO THE NEW FILE ALREADY !! BELOW HAS NOT */
-
-
-/* Home  / info Page Specific */
-
-h4 {
-    text-align: center;
-}
-
-.TreatServices {
-    text-align: center;
-}
-
 table, tr, th, td {
     background-color: #86a7b2;
     border: 1px solid #134D62;
@@ -210,6 +197,20 @@ table, tr, th, td {
 .Insurances li, .Contacts li {
     display: flex;
     line-height: 125%;
+}
+
+
+/* !! EVERY THING ABOVE THIS WAS ADDED TO THE NEW FILE ALREADY !! BELOW HAS NOT */
+
+
+/* Home  / info Page Specific */
+
+h4 {
+    text-align: center;
+}
+
+.TreatServices {
+    text-align: center;
 }
 
 /* Providers Page Specific */
