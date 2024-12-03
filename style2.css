@@ -176,6 +176,8 @@ table, tr, th, td {
 
         /* Shared Elements */
         nav {
+            display: flex;
+            justify-content: right;
             position: relative;
         }        
 
@@ -195,6 +197,7 @@ table, tr, th, td {
 
         .menu-toggle {
             display: block;
+            margin-right: 10px;
         }
 
         /* Home page specific */

@@ -144,3 +144,47 @@ document.addEventListener('DOMContentLoaded', () => {
     // Call the handler initially to set up the page correctly
     handleMediaChange(mediaQuery);
 });
+
+// Info Page Section One
+document.addEventListener('DOMContentLoaded', () => {
+    // Set the specific media query
+    const mediaQuery = window.matchMedia('(min-device-width: 320px) and (max-device-width: 480px)');
+
+    const handleMediaChange = (e) => {
+        const hoursTableDiv = document.querySelector('.col-4.hoursTable, .col-12.hoursTable'); 
+        const spacerDiv = document.querySelector('.col-2.spacer');
+        const insurance1Div = document.querySelector('.col-3.InsuranceAcc, .col-12.InsuranceAcc'); 
+        const insurance2Div = document.querySelector('.col-3.InsuranceSTB, .col-12.InsuranceSTB'); 
+
+        if (e.matches) { // If the screen matches the specific media query
+            // Remove the spacer div
+            spacerDiv?.remove();
+
+            // Change the class names of the divs to 'col-12'
+            hoursTableDiv?.classList.replace('col-4', 'col-12');
+            insurance1Div?.classList.replace('col-3', 'col-12');
+            insurance2Div?.classList.replace('col-3', 'col-12');
+        } else { // Revert changes for screens outside the media query
+            // Ensure the spacer is added back if it doesn't exist
+            if (!document.querySelector('.col-2.spacer')) {
+                const parentElement = hoursTableDiv?.parentNode;
+                if (parentElement && insurance1Div) {
+                    const spacerClone = document.createElement('div');
+                    spacerClone.className = 'col-2 spacer';
+                    parentElement.insertBefore(spacerClone, insurance1Div);
+                }
+            }
+
+            // Revert the class names of the divs to original
+            hoursTableDiv?.classList.replace('col-12', 'col-4');
+            insurance1Div?.classList.replace('col-12', 'col-3');
+            insurance2Div?.classList.replace('col-12', 'col-3');
+        }
+    };
+
+    // Attach the handler function to the media query
+    mediaQuery.addEventListener('change', handleMediaChange);
+
+    // Call the handler initially to set up the page correctly
+    handleMediaChange(mediaQuery);
+});
