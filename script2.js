@@ -62,6 +62,46 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Info Page Section One
+document.addEventListener('DOMContentLoaded', () => {
+    // Set the specific media query for the screen size range
+    const mediaQuery = window.matchMedia('(min-device-width: 768px) and (max-device-width: 1024px)');
+
+    const handleMediaChange = (e) => {
+        const hoursTableDiv = document.querySelector('.col-4.hoursTable'); 
+        const spacerDiv = document.querySelector('.col-2.spacer');
+        const insurance1Div = document.querySelector('.col-3.InsuranceAcc, .col-4.InsuranceAcc'); 
+        const insurance2Div = document.querySelector('.col-3.InsuranceSTB, .col-4.InsuranceSTB'); 
+
+        if (e.matches) { // If the screen matches the specific media query
+            // Remove the spacer div
+            spacerDiv?.remove();
+
+            // Change the class names of the Insurance divs to 'col-4'
+            insurance1Div?.classList.replace('col-3', 'col-4');
+            insurance2Div?.classList.replace('col-3', 'col-4');
+        } else { // Revert changes for screens outside the media query
+            if (!document.querySelector('.col-2.spacer')) {
+                // Recreate the spacer div
+                const parentElement = hoursTableDiv.parentNode;
+
+                // Ensure the spacer is added between the hoursTableDiv and the insurance1Div
+                const spacerClone = document.createElement('div');
+                spacerClone.className = 'col-2 spacer';
+                parentElement.insertBefore(spacerClone, insurance1Div);
+            }
+
+            // Revert the class names of the Insurance divs to 'col-3'
+            insurance1Div?.classList.replace('col-4', 'col-3');
+            insurance2Div?.classList.replace('col-4', 'col-3');
+        }
+    };
+
+    // Attach the handler function to the media query
+    mediaQuery.addEventListener('change', handleMediaChange);
+
+    // Call the handler initially to set up the page correctly
+    handleMediaChange(mediaQuery);
+});
 
 
 // Phones 
