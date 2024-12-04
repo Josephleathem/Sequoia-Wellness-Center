@@ -157,7 +157,39 @@ table, tr, th, td {
     display: list-item;
     list-style-type: circle;
 }
+ /* Provider Page Specific */
 
+ .providers {
+    align-items: baseline;
+    justify-content: center;
+}
+
+.provider {
+    border: 1px solid #134D62;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 5px;
+    padding: 7.5px;
+}
+
+.providerImage {
+    height: 570px;
+    width: auto;
+}
+
+h5 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.jobtitle {
+    display: none;
+}
+
+.provider p {
+    margin: 5px 0px;
+}
 
 
 @media only screen  /* For Tablets */
