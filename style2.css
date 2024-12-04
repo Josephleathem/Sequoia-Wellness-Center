@@ -193,12 +193,34 @@ h5 {
 
 
 @media only screen  /* For Tablets */
-    and (min-device-width : 768px)
+    and (min-device-width : 768px) 
     and (max-device-width : 1024px) {
         
         /* Info Page Specific */
         table {
             margin-left: 5px;
+        }
+}
+
+@media only screen  /* For bigger Tablets */
+    and (min-device-width : 896px) 
+    and (max-device-width : 1024px) {
+        
+        /* Provider Page Specific */
+        .providerImage {
+            height: 456px;
+            width: auto;
+        }
+}
+
+@media only screen  /* For Smaller Tablets */
+    and (min-device-width : 768px) 
+    and (max-device-width : 895px) {
+        
+        /* Provider Page Specific */
+        .providerImage {
+            height: 427.5px;
+            width: auto;
         }
 }
 

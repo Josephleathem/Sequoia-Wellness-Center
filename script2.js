@@ -104,6 +104,32 @@ document.addEventListener('DOMContentLoaded', () => {
     handleMediaChange(mediaQuery);
 });
 
+/*------------------------- Providers Page providers Section -------------------------*/
+document.addEventListener('DOMContentLoaded', () => {
+    // Set the specific media query
+    const mediaQuery = window.matchMedia('(min-device-width: 768px) and (max-device-width: 1024px)');
+
+    const handleMediaChange = (e) => {
+        const providers = document.querySelectorAll('.provider'); // Select all .provider divs
+
+        providers.forEach(provider => {
+            if (e.matches) { // If the screen matches the specific media query
+                // Change the class names of the provider divs to 'col-3'
+                provider.classList.replace('col-4', 'col-5');
+            } else { // Revert changes for screens outside the media query
+                // Revert the class names of the provider divs to original
+                provider.classList.replace('col-5', 'col-4');
+            }
+        });
+    };
+
+    // Attach the handler function to the media query
+    mediaQuery.addEventListener('change', handleMediaChange);
+
+    // Call the handler initially to set up the page correctly
+    handleMediaChange(mediaQuery);
+});
+
 
 /*------------------------- Phones  -------------------------*/
 
