@@ -1,6 +1,6 @@
-// Shared Scripts
+/*------------------------- Shared Scripts -------------------------*/
 
-// Navigation bar 
+/*------------------------- Navigation bar -------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.navigationBar');
@@ -20,9 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Tablets
+/*------------------------- Tablets -------------------------*/
 
-// Home Page Section Two
+
+/*------------------------- Home Page Section Two -------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
     // Set the specific media query
     const mediaQuery = window.matchMedia('(min-device-width: 768px) and (max-device-width: 1024px)');
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     handleMediaChange(mediaQuery);
 });
 
-// Info Page Section One
+/*------------------------- Info Page Section One -------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
     // Set the specific media query for the screen size range
     const mediaQuery = window.matchMedia('(min-device-width: 768px) and (max-device-width: 1024px)');
@@ -104,9 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Phones 
+/*------------------------- Phones  -------------------------*/
 
-// Home Page Section Two
+/*------------------------- Home Page Section Two -------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
     // Set the specific media query
     const mediaQuery = window.matchMedia('(min-device-width: 320px) and (max-device-width: 480px)');
@@ -145,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     handleMediaChange(mediaQuery);
 });
 
-// Info Page Section One
+/*------------------------- Info Page Section One -------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
     // Set the specific media query
     const mediaQuery = window.matchMedia('(min-device-width: 320px) and (max-device-width: 480px)');
@@ -189,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
     handleMediaChange(mediaQuery);
 });
 
-// Info Page Section Two
+/*------------------------- Info Page Section Two -------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
     // Set the specific media query
     const mediaQuery = window.matchMedia('(min-device-width: 320px) and (max-device-width: 480px)');
