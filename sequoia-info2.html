@@ -56,6 +56,15 @@
                     </h2>
                     <div class="row">
                         <div class="col-4 hoursTable">
+                        <!--
+                            Dynamic Hours Display: Potential Addition
+                            Use JavaScript to highlight the current day in the "Hours of Operation" table:
+                            javascript
+
+                            const today = new Date().getDay(); // 0 (Sunday) to 6 (Saturday)
+                            const rows = document.querySelectorAll('table tr');
+                            if (today > 0 && today < 6) rows[today + 1].style.backgroundColor = '#e0f7fa';
+                        -->
                             <table>
                                 <tbody>
                                     <tr>
@@ -125,7 +134,52 @@
             </div>
         </section>
         <section>
-
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        Services and Treatments
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h4>
+                        Services Provided
+                    </h4>
+                    <!--Add abbr for abbreviations, add telehealth, display as list-->
+                    <ul>
+                        <li>Comprehensive Diagnostic Assessments</li>
+                        <li>Substance Abuse Assessment</li>
+                        <li>Screening and testing for Depression Anxiety ADHD and PTSD</li>
+                        <li>Individual Therapy</li>
+                        <li>Marriage Therapy</li>
+                        <li>Consulting Services</li>
+                        <li>Grief and Loss</li>
+                        <li>Group Counseling</li>
+                        <li>Individualized Treatment Approach's for Veterans and First Responders</li>
+                    </ul>
+                    <ul>
+                        <!--add the href tel attribute-->
+                        <p>We offer a very flexible sliding scale to those who are under insured or have no insurance coverage. Please call the office if you would like more information about the service.</p>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h4>Treatment Approach's</h4>
+                    <ul>
+                        <li>Internal Family Systems Therapy (IFS)</li>
+                        <li>Cognitive Behavioral Therapy (CBT)</li>
+                        <li>Behavioral Modification</li>
+                        <li>Motivational Interviewing in Addition Counseling</li>
+                        <li>Experiential Therapy</li>
+                        <li>Dialectical Behavioral Therapy (DBT)</li>
+                        <li>Brain Spotting Therapy</li>
+                        <li>Eye Movement Desensitization and Reprocessing (EMDR)</li>
+                        <li>Hypnosis</li>
+                        <li>Humanistic Therapy</li>
+                        <li>Gestalt Therapy</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <footer>
             <address itemscope itemtype="https://schema.org/Organization">
