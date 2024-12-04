@@ -188,3 +188,33 @@ document.addEventListener('DOMContentLoaded', () => {
     // Call the handler initially to set up the page correctly
     handleMediaChange(mediaQuery);
 });
+
+// Info Page Section Two
+document.addEventListener('DOMContentLoaded', () => {
+    // Set the specific media query
+    const mediaQuery = window.matchMedia('(min-device-width: 320px) and (max-device-width: 480px)');
+
+    const handleMediaChange = (e) => {
+        const service = document.querySelector('.col-6.Service, .col-12.Service'); 
+        const treatment = document.querySelector('.col-6.Treatment, .col-12.Treatment'); 
+
+        if (e.matches) { // If the screen matches the specific media query
+
+            // Change the class names of the divs to 'col-12'
+            service?.classList.replace('col-6', 'col-12');
+            treatment?.classList.replace('col-6', 'col-12');
+
+        } else { // Revert changes for screens outside the media query
+
+            // Revert the class names of the divs to original
+            service?.classList.replace('col-12', 'col-6');
+            treatment?.classList.replace('col-12', 'col-6');
+        }
+    };
+
+    // Attach the handler function to the media query
+    mediaQuery.addEventListener('change', handleMediaChange);
+
+    // Call the handler initially to set up the page correctly
+    handleMediaChange(mediaQuery);
+});
