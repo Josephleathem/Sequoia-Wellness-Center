@@ -199,12 +199,6 @@ table, tr, th, td {
     line-height: 125%;
 }
 
-
-/* !! EVERY THING ABOVE THIS WAS ADDED TO THE NEW FILE ALREADY !! BELOW HAS NOT */
-
-
-/* Home  / info Page Specific */
-
 h4 {
     text-align: center;
 }
@@ -212,6 +206,10 @@ h4 {
 .TreatServices {
     text-align: center;
 }
+
+
+/* !! EVERY THING ABOVE THIS WAS ADDED TO THE NEW FILE ALREADY !! BELOW HAS NOT */
+
 
 /* Providers Page Specific */
 h2 {
