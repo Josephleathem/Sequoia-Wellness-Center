@@ -157,6 +157,11 @@ table, tr, th, td {
     display: list-item;
     list-style-type: circle;
 }
+
+.services li.standoutListItem {
+    list-style-type: disc;
+}
+
  /* Provider Page Specific */
 
  .providers {
@@ -201,7 +206,7 @@ h5 {
             margin-left: 5px;
         }
 }
-
+ /* Gradually change image size for providers images*/
 @media only screen  /* For bigger Tablets */
     and (min-device-width : 896px) 
     and (max-device-width : 1024px) {
