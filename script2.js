@@ -1,3 +1,9 @@
+/*  
+        Scripts for Sequoia Wellness Center
+            Author: Joseph Leathem Jr
+            Filename: script2.js 
+    */
+
 /* ************************* Shared Scripts ************************* */
 
 /* ********** Navigation bar ********** */
