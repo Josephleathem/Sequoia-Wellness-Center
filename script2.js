@@ -4,27 +4,22 @@
             Filename: script2.js 
     */
 
-/* ************************* Shared Scripts ************************* */
+/* ************************* Computer ************************* */
 
-/* ********** Navigation bar ********** */
+document.addEventListener("DOMContentLoaded", function () {
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const currentDayIndex = new Date().getDay(); // Get current day (0 = Sunday, 6 = Saturday)
 
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.navigationBar');
+    // Find the table and rows
+    const tableRows = document.querySelectorAll(".hoursTable table tbody tr");
 
-    // Ensure elements exist before adding event listeners
-    if (menuToggle && navLinks) {
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('visible');
-        });
-
-        // Close menu when clicking outside of it
-        document.addEventListener('click', (e) => {
-            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-                navLinks.classList.remove('visible');
-            }
-        });
-    }
+    // Loop through rows and match the day
+    tableRows.forEach((row) => {
+        const dayCell = row.querySelector("th");
+        if (dayCell && dayCell.textContent.trim() === daysOfWeek[currentDayIndex]) {
+            row.classList.add("highlight"); // Add a class for the current day
+        }
+    });
 });
 
 /* ************************* Tablets ************************* */
@@ -140,6 +135,27 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ************************* Phones ************************* */
+
+/* ********** Navigation bar ********** */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.navigationBar');
+
+    // Ensure elements exist before adding event listeners
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('visible');
+        });
+
+        // Close menu when clicking outside of it
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('visible');
+            }
+        });
+    }
+});
 
 /* ********** Home Page Section Two ********** */
 
