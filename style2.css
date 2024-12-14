@@ -207,17 +207,6 @@ h5 {
         }
 }
  /* Gradually change image size for providers images*/
-@media only screen  /* For bigger Tablets */
-    and (min-device-width : 896px) 
-    and (max-device-width : 1024px) {
-        
-        /* Provider Page Specific */
-        .providerImage {
-            height: 456px;
-            width: auto;
-        }
-}
-
 @media only screen  /* For Smaller Tablets */
     and (min-device-width : 768px) 
     and (max-device-width : 895px) {
@@ -225,6 +214,17 @@ h5 {
         /* Provider Page Specific */
         .providerImage {
             height: 427.5px;
+            width: auto;
+        }
+}
+
+@media only screen  /* For bigger Tablets */
+    and (min-device-width : 896px) 
+    and (max-device-width : 1024px) {
+        
+        /* Provider Page Specific */
+        .providerImage {
+            height: 456px;
             width: auto;
         }
 }
