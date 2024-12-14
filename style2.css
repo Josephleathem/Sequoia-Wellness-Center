@@ -1,4 +1,4 @@
-/* Shared Elements */
+/* ************************* Shared Elements ************************* */
 * {
     box-sizing: border-box;
 }
@@ -48,7 +48,7 @@ hr {
     margin: 0px;
 }
 
-/* Header Section */
+/* ********** Header Section ********** */
 
 .headerLogo {
     display: flex;
@@ -104,7 +104,8 @@ h2, h3{
     text-align: center;
 }
 
-/* Footer Section */
+/* ********** Footer Section ********** */
+
 footer {
     text-align: center;
     background-color: #86a7b2;
@@ -115,8 +116,8 @@ footer a {
     color: black;
 }
 
+/* ************************* Home Page Specific ************************* */
 
-/* Home Page Specific */
 .missionStatement {
     padding: 0px 3px;
     text-align: center;
@@ -143,7 +144,7 @@ footer a {
     margin-top: 0px;
 }
 
-/* Info Page Specific */
+/* ************************* Info Page Specific ************************* */
 
 table, tr, th, td {
     background-color: #86a7b2;
@@ -162,7 +163,7 @@ table, tr, th, td {
     list-style-type: disc;
 }
 
- /* Provider Page Specific */
+/* ************************* Provider Page Specific ************************* */
 
  .providers {
     align-items: baseline;
@@ -196,22 +197,26 @@ h5 {
     margin: 5px 0px;
 }
 
+/* ************************* Media Queries ************************* */
 
 @media only screen  /* For Tablets */
     and (min-device-width : 768px) 
     and (max-device-width : 1024px) {
         
-        /* Info Page Specific */
+/* ********** Info Page Specific ********** */
+
         table {
             margin-left: 5px;
         }
 }
  /* Gradually change image size for providers images*/
+
 @media only screen  /* For Smaller Tablets */
     and (min-device-width : 768px) 
     and (max-device-width : 895px) {
         
-        /* Provider Page Specific */
+/* ********** Provider Page Specific ********** */
+
         .providerImage {
             height: 427.5px;
             width: auto;
@@ -222,7 +227,7 @@ h5 {
     and (min-device-width : 896px) 
     and (max-device-width : 1024px) {
         
-        /* Provider Page Specific */
+/* ********** Provider Page Specific ********** */
         .providerImage {
             height: 456px;
             width: auto;
@@ -233,7 +238,7 @@ h5 {
     and (min-device-width : 320px)
     and (max-device-width : 480px) {
 
-        /* Shared Elements */
+/* ********** Shared Elements ********** */
         nav {
             display: flex;
             justify-content: right;
@@ -259,7 +264,8 @@ h5 {
             margin-right: 10px;
         }
 
-        /* Home page specific */
+/* ********** Home Page Specific ********** */
+
         .contactUS {
             display: none;
         }
