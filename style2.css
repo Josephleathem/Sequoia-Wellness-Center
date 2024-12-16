@@ -54,6 +54,10 @@ hr {
     margin: 0px;
 }
 
+abbr {
+    text-decoration: 0.5px dotted underline black;
+}
+
 /* ********** Header Section ********** */
 
 .headerLogo {
