@@ -165,6 +165,7 @@ table, tr, th, td {
 }
 
 .highlight {
+    /* color: #ffffff7e; */
     color: #134D62;
     font-weight: bolder;
 }
