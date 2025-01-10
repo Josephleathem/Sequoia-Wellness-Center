@@ -75,6 +75,8 @@ nav {
     margin: 0;
     text-align: center;
     width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 nav ul {
