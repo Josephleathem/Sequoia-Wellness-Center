@@ -281,7 +281,7 @@ h5 {
             flex-direction: column;
             left: 0;
             position: absolute;
-            top: 60px; /*Adjust by header size*/
+            top: 0; /*Adjust by header size*/
             width: 100%;
         }
 
