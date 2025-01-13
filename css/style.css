@@ -135,6 +135,11 @@ footer a {
     text-align: center;
 }
 
+.missionStatement p {
+    font-size: 16.5px;
+}
+
+
 .contacts li {
     align-items: center;
     display: flex;
