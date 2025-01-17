@@ -103,6 +103,7 @@ ul.navigationBar li a:hover {
     border-radius: 25px;
     text-shadow: 1px 1px 2.5px whitesmoke;
 }
+
 .menu-toggle {
     background-color: #ADC4CC;
     border: none;
@@ -110,6 +111,8 @@ ul.navigationBar li a:hover {
     cursor: pointer;
     display: none;
     font-size: 1.5em;
+    position: relative;
+    z-index: 20; /* Ensures toggle button stays on top */
 }
 
 h2, h3{
@@ -279,6 +282,7 @@ h5 {
             display: flex;
             justify-content: right;
             position: relative;
+            z-index: 10; /* Ensure nav elements layer correctly */
         }        
 
         .navigationBar {
@@ -287,8 +291,9 @@ h5 {
             flex-direction: column;
             left: 0;
             position: absolute;
-            top: 0; /*Adjust by header size*/
+            top: 0; /* Dropdown menu starts at the top of nav */
             width: 100%;
+            z-index: 15; /* Ensures dropdown menu is below the toggle */
         }
 
         .navigationBar.visible {
