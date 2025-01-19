@@ -115,7 +115,7 @@ ul.navigationBar li a:hover {
     z-index: 20; /* Ensures toggle button stays on top */
 }
 
-h2, h3{
+h1, h2, h3{ 
     text-align: center;
 }
 
@@ -200,6 +200,10 @@ table, tr, th, td {
 
 .services li.standoutListItem {
     list-style-type: disc;
+}
+
+#slidingscale {
+    text-align: center;
 }
 
 /* ************************* Provider Page Specific ************************* */
