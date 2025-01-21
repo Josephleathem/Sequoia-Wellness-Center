@@ -157,6 +157,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+/* ********** Footer ********** */
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Define the media query for phones
+    const mediaQuery = window.matchMedia('(max-width: 480px)');
+
+    const updateFooterForPhones = (e) => {
+        const address = document.querySelector('footer address');
+        if (!address) return; // Exit if no address element exists
+
+        if (e.matches) {
+            // For phones: Add <br> tags to the footer content
+            address.innerHTML = `
+                <span itemprop="name">Sequoia Wellness</span> | 
+                Phone: <a href="tel:+14198138009" itemprop="telephone">419-813-8009</a><br>
+                Email: <a href="mailto:Sequoiawellness@outlook.com" itemprop="email">Sequoiawellness@outlook.com</a>
+            `;
+        } else {
+            // For non-phones: Restore the original inline footer content
+            address.innerHTML = `
+                <span itemprop="name">Sequoia Wellness</span> | 
+                Phone: <a href="tel:+14198138009" itemprop="telephone">419-813-8009</a> | 
+                Email: <a href="mailto:Sequoiawellness@outlook.com" itemprop="email">Sequoiawellness@outlook.com</a>
+            `;
+        }
+    };
+
+    // Listen for changes in the media query
+    mediaQuery.addEventListener('change', updateFooterForPhones);
+
+    // Run the function initially to apply the correct format on load
+    updateFooterForPhones(mediaQuery);
+});
+
+
 /* ********** Home Page Section Two ********** */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -299,3 +334,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Call the handler initially to set up the page correctly
     handleMediaChange(mediaQuery);
 });
+

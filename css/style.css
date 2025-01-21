@@ -105,7 +105,7 @@ ul.navigationBar li a:hover {
 }
 
 .menu-toggle {
-    background-color: #ADC4CC;
+    background-color: transparent;
     border: none;
     color: black;
     cursor: pointer;
@@ -204,6 +204,7 @@ table, tr, th, td {
 
 #slidingscale {
     text-align: center;
+    margin: 16px;
 }
 
 /* ************************* Provider Page Specific ************************* */
