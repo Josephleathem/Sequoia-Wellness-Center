@@ -58,6 +58,10 @@ abbr {
     text-decoration: 0.5px dotted underline black;
 }
 
+p {
+    margin: auto 5px;
+}
+
 /* ********** Header Section ********** */
 
 .headerLogo {
@@ -191,11 +195,23 @@ table, tr, th, td {
     text-align: center; /* Align text to the right */
 }
 
+.bodypara {
+padding: 0px 5px;
+text-align: center;
+}
 
 .Insurances li, .services li, .treatments li  {
     display: list-item;
     list-style-type: circle;
     font-size: 17px;
+}
+
+.InsuranceAcc p, .InsuranceSTB p{
+    text-align: center;
+}
+
+.InsuranceAcc p {
+    padding-right: 2px ;
 }
 
 .services li.standoutListItem {
