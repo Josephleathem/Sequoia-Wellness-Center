@@ -335,3 +335,26 @@ document.addEventListener('DOMContentLoaded', () => {
     handleMediaChange(mediaQuery);
 });
 
+/* ********** 404 page not found ********** */
+// Function to handle the media query check and remove/re-add the <br> element
+function handleMediaQuery() {
+    const spacerElements = document.querySelectorAll('br.spacer'); // Select all <br class="spacer" /> elements
+
+    if (window.matchMedia('(min-device-width: 320px) and (max-device-width: 480px)').matches) {
+        // If the device width is between 320px and 480px, remove the spacer elements
+        spacerElements.forEach(spacer => {
+            spacer.style.display = 'none'; // Optionally hide the <br> element
+        });
+    } else {
+        // If outside the media query, ensure the <br> elements are visible again
+        spacerElements.forEach(spacer => {
+            spacer.style.display = 'block'; // Revert to default block display
+        });
+    }
+}
+
+// Initialize the function on load
+window.addEventListener('load', handleMediaQuery);
+
+// Add event listener to check when window size changes
+window.addEventListener('resize', handleMediaQuery);
