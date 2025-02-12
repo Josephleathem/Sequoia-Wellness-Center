@@ -256,11 +256,22 @@ text-align: center;
     width: auto;
 }
 
-h5 {
+.provider h2 {
     margin-bottom: 0px;
-    margin-top: 20px;
+}
+.provider p.personalEmail {
+    display: flex;
+    justify-content: center;
 }
 
+p.personalEmail .contact {
+    color: black;
+    text-decoration: none;
+}
+
+p.personalEmail .contact:hover {
+    text-decoration: underline;
+}
 .jobtitle {
     display: none;
 }
