@@ -435,6 +435,12 @@ p.personalEmail .contact:hover {
             padding-left: 10px;
         }
 
+        /* ********** CTA Section ********** */
+            /* CTA Headline */
+            .cta-section h2 {
+                line-height: 1.1em;
+            }
+
 
 /* ********** 404 page not found specific ********** */
         .notfound h1, .notfound p {
